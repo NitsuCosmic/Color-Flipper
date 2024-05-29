@@ -1,0 +1,63 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100svh;
+	background-color: #0f0f0f;
+	font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont,
+		"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+		sans-serif;
+}
+
+main {
+  padding: 1rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+  border-radius: .75rem;
+  text-align: center;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.wrapper h2 {
+  text-wrap: balance;
+}
+
+.wrapper button {
+  padding: .5rem;
+  border: none;
+  border-radius: .5rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.wrapper__color-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+}
+
+.wrapper__color-btns button {
+  padding: .5rem 1rem;
+  transition: color .25s ease, background-color .25s ease;
+}
+
+.wrapper__color-btns button:hover {
+  color: hsl(0, 0%, 100%);
+  background-color: #0f0f0f;
+}
+
+.wrapper__color-btns .selected {
+  color: hsl(0, 0%, 100%);
+  background-color: #0f0f0f;
+}
